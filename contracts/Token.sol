@@ -25,7 +25,7 @@ contract Token {
         emit Transfer(msg.sender, to, amount);
     }
 
-    function getBalance(address account) public constant returns (uint) {
+    function getBalance(address account) public view returns (uint) {
         return balances[account];
     }
 }
